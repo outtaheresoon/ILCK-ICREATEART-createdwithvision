@@ -1,7 +1,7 @@
 
 ---
 
-## 🚀 Deployment (Netlify)
+##  Deployment (Netlify)
 
 This project is ready for direct deployment via GitHub + Netlify:
 
@@ -15,7 +15,7 @@ Done. Your site goes live instantly.
 
 ---
 
-## 🎞️ Animation System
+##  Animation System
 
 The headline animation uses GSAP:
 
@@ -28,14 +28,14 @@ This creates a floating, unstable-but-controlled typography feel.
 
 ---
 
-## 🧠 Inspiration
+##  Inspiration
 
 - Inspired by Journey, Staying Stylish
 
 
 ---
 
-## 📌 Notes
+##  Notes
 
 - Ensure video files are optimized for web performance
 - Avoid spaces in file names for deployment stability
@@ -43,7 +43,7 @@ This creates a floating, unstable-but-controlled typography feel.
 
 ---
 
-## 👤 Creator / Developer
+##  Creator / Developer
 
 **OUTTAHERESOON**
 
@@ -53,7 +53,7 @@ This creates a floating, unstable-but-controlled typography feel.
 
 ---
 
-## 📜 License
+##  License
 
 This project is open for inspiration and learning purposes.  
 Feel free to remix, but don’t clone the identity.
