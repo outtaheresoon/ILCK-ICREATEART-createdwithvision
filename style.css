@@ -1,4 +1,6 @@
+html,
 body {
+  height: auto;
   margin: 0;
   padding: 0;
   background: black;
@@ -21,18 +23,13 @@ body {
 
 /* VIDEO */
 .bg-video {
-  position: fixed;
-
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   width: min(85vw, 960px);
   aspect-ratio: 16 / 9;
-
   object-fit: cover;
-
-  z-index: 0;
 }
 
 @media (max-width: 768px) {
@@ -46,7 +43,7 @@ body {
   position: relative;
   z-index: 2;
 
-  margin-top: 100vh; /* 👈 pushes everything below video */
+  margin-top: 100vh;
   padding: 40px 20px 120px;
 }
 
@@ -55,7 +52,7 @@ body {
   position: relative;
   z-index: 2;
 
-  margin-top: 80px;
+  margin-top: 30px;
 
   color: white;
   text-align: center;
@@ -91,33 +88,19 @@ body {
   }
 }
 
-/* IMAGES */
-.project-images {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-}
-
-.project-images img {
-  width: min(90vw, 600px);
-  border-radius: 10px;
-}
-
 /* FOOTER */
 .brand-footer {
-  position: fixed;
-  bottom: 20px;
-  left: 0;
+  position: relative;
+  bottom: auto;
+  left: auto;
   width: 100%;
   text-align: center;
 
   font-family: "Montserrat", sans-serif;
-
   color: white;
   z-index: 3;
 
-  line-height: 1.2;
+  padding: 60px 0 30px;
 }
 
 .brand-tagline {
@@ -175,3 +158,165 @@ body {
   height: 22px;
 }
 
+/* IMAGES */
+.project-images {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  padding: 80px 0;
+  transform: translateZ(0);
+}
+
+.project-images img {
+  width: 300px;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.project-images img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .project-images img {
+    width: 220px;
+    max-height: 300px;
+  }
+}
+
+.images-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 120px;
+  position: relative;
+  z-index: 2;
+  background: black;
+  margin-top: -20px;
+}
+
+.hero {
+  position: relative;
+  height: 20vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 30vh;
+  }
+
+  .headline {
+    margin-top: 40px;
+  }
+
+  .images-wrapper {
+    padding-bottom: 20px;
+  }
+}
+
+/* more context ---project info */
+.context-section,
+.story-section,
+.scroll-note {
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Context styling */
+.context-section h2 {
+  font-size: clamp(22px, 3vw, 42px);
+  margin-bottom: 10px;
+}
+
+.context-section p {
+  opacity: 0.8;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 0.7rem;
+}
+
+.context-section span {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  opacity: 0.4;
+  letter-spacing: 2px;
+}
+
+/* Story section */
+.story-section p {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 0.6rem;
+  opacity: 0.75;
+  line-height: 1.6;
+}
+
+/* Scroll note */
+.scroll-note p {
+  font-size: 0.6rem;
+  opacity: 0.3;
+  letter-spacing: 3px;
+}
+
+/* PROJECT - ARCHIVE */
+
+.project-archive {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.archive-label {
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  opacity: 0.4;
+  margin-bottom: 10px;
+}
+
+.archive-items {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.archive-items button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 0.7rem;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.archive-items button.active {
+  border-color: white;
+  opacity: 1;
+}
+
+.archive-items button:hover {
+  opacity: 0.6;
+  transform: translateY(-2px);
+}
+
+.context-section.coming-soon {
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  opacity: 0.8;
+}
