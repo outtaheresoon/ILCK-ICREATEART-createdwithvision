@@ -39,3 +39,19 @@ gsap.fromTo(
     yoyo: true,
   },
 );
+
+/* adobe vectors */
+
+
+gsap.set(".adobe-vectors svg", {
+  x: 0,
+  rotation: 0,
+  scale: 1,
+  opacity: 1,
+  filter: "none",
+});
+
+gsap.to(".adobe-vectors svg", {
+  boxShadow: "0 0 18px rgba(255,255,255,0.6)",
+  duration: 0,
+});
