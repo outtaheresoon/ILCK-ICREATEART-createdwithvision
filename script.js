@@ -1,18 +1,3 @@
-/*gsap.registerPlugin(ScrollTrigger);
-
-gsap.from(".montserrat-bold span", {
-  xPercent: -200,
-
-  stagger: 0.15,
-
-  scrollTrigger: {
-    trigger: ".headline",
-    start: "top center",
-    end: "bottom center",
-    scrub: 1,
-  },
-}); */
-
 gsap.fromTo(
   ".montserrat-bold span",
   {
