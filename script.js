@@ -40,7 +40,6 @@ gsap.fromTo(
   },
 );
 
-
 /* images*/
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -138,4 +137,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
