@@ -13,7 +13,7 @@ This creates a floating, unstable-but-controlled typography feel.
 
 ##  Inspiration
 
-- Inspired by Journey, Staying Stylish
+- Inspired by My Journey, Staying Stylish
 
 
 ---
