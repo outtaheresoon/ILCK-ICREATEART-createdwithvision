@@ -3,7 +3,7 @@
 
 ##  Deployment (Netlify)
 
-To deployment any project via GitHub + Netlify:
+To deploy any project via GitHub + Netlify:
 
 1. Push this repo to GitHub  
 2. Go to Netlify → “Import from GitHub”  
