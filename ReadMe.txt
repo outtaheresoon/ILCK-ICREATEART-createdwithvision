@@ -1,20 +1,3 @@
-
----
-
-##  Deployment (Netlify)
-
-To deploy any project via GitHub + Netlify:
-
-1. Push this repo to GitHub  
-2. Go to Netlify → “Import from GitHub”  
-3. Set:
-   - **Build command:** *(leave empty)*
-   - **Publish directory:** `/`
-
-Done. Your site goes live instantly.
-
----
-
 ##  Animation System
 
 The headline animation uses GSAP:
